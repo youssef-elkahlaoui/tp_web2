@@ -1,0 +1,134 @@
+body{
+    background-color:  rgb(42, 81, 194);
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    width: 900px;
+    margin: 3% auto;
+    height:  530px;
+
+}
+.box{
+    flex: 1;
+    /* border: 1px solid black; */
+    margin: 0px;
+}
+.box:nth-child(1){
+    border-top-left-radius:4%;
+    border-bottom-left-radius: 4%;
+}
+.box:nth-child(2){
+    border-top-right-radius:4%;
+    border-bottom-right-radius: 4%;
+}
+.image{
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    background-image: url("image.png");
+}
+.login {
+    float: inline-start;
+    background-color: white;
+    color: white;
+    padding: 20px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.btn {
+    background-color: rgb(46, 89, 217);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 50px;
+}
+.btn:hover {
+    opacity:1;
+}
+p{
+    color: rgb(147, 158, 150);
+    margin: auto 50% ;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 36px;
+    right: 140px;
+}
+h1{
+    color: rgb(121, 133, 125);
+    margin: 30px 15% 10px;
+    width: 100%;
+    font-weight: 300;
+}
+input:nth-last-of-type(n+2) {
+    border-radius: 50px;
+    height: 30px;
+    margin: 1% 0;
+    width: 400px;
+}
+input:hover{
+    opacity: 0.6;
+}
+#chekbox{
+    margin: 20px 0 20px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+.line{
+    margin: 35px 0 25px;
+    border: none;
+    height: 1px;
+    background-color: rgb(213, 228, 218);
+}
+div a{
+    text-align: center;
+    position: relative;
+    right: -140px;
+    color: rgb(42, 81, 194);
+    text-decoration: none;
+    }
+#Q{
+    margin-left: 25px;
+}
+@media screen and (max-width: 1080px) {
+    .container {
+    width: 400px;
+    height: 560px;
+    }
+    input:nth-last-of-type(n+2) {
+    width: 350px;
+    }
+    .box:nth-child(2){
+    border-radius:4%;
+    }
+    h1{
+    margin: 30px 8% 10px;
+    }
+    .login {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .input-field {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+    div a{
+    right: -110px;
+    }
+    .image{
+        display: none;
+    }
+}
